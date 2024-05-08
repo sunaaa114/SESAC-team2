@@ -5,7 +5,13 @@
 | 조선아 | 한승아 |
 |:---:|:---:|
 |<a href='https://github.com/suusuu00'> <img src='https://github.com/suusuu00/SESAC-team2/assets/124228791/43413408-df69-4377-b599-a0396aad71d1' width='300'> <br> @suusuu00 </a> | <a href='https://github.com/xloor0219'> <img src='https://github.com/suusuu00/SESAC-team2/assets/124228791/a7bc9554-fa4a-4705-a3a6-d1c05d897cc4' width='300'> <br> @xloor0219 </a> |
-<br>
+
+## 목차
+1. [약 정보 챗봇](#약-정보-챗봇-pill-information-chat-bot)
+    - [프로젝트 소개](#프로젝트-소개)
+    - [개발 환경](#개발-환경)
+    - [역할 분담](#역할-분담)
+2. [코딩 테스트 스터디](#코딩-테스트-스터디)
 
 # 약 정보 챗봇 (pill information chat-bot)
 <p align='center'>
@@ -59,5 +65,5 @@
 
 
 
-## 코딩 테스트 스터디
+# 코딩 테스트 스터디
 - 책 정보 : 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈)
