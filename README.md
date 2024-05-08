@@ -27,8 +27,13 @@
     - 사용 데이터 : 약학정보원 약 정보 데이터 (제품명, 성분, 효과, 주의사항 등)
 - **Frontend** : streamlit
 - **Backend** : FastAPI
+- **RAG** : Langchain
+    - Langchain을 이용하여 vectorstore 저장
+    - 검색기인 retriever와 LLAMA3 연결하여 질문과 답변 제공
+    - Embedding 모델 : `intfloat/multilingual-e5-base`
+    - RAG 프롬프트 : `rlm/rag-prompt`
+    - LLM : `meta-llama/Meta-Llama-3-8B`
 - **서버** : GCP
-    - LLAMA3에 langchain RAG 연결
 - **협업 툴**
     - Github : 브랜치를 이용하여 만든 코드 업로드, Merge 등
     - Notion : 프로젝트 목표 및 로드맵 정리를 통해 해야 할 일 확인
@@ -46,21 +51,31 @@
     - 백엔드 에러 시 System Error 채팅 형태로 출력
     - 답변 받을 때까지 질문 못하게 막고 로딩 화면 출력
 - **FastAPI 백엔드**
-    - '/question/' post 함수로 질문 받으면 LLAMA3 langchain invoke에 넣어 답변 return
+    - `'/question/'` post 함수로 질문 받으면 LLAMA3 langchain invoke에 넣어 답변 return
+- **Langchain RAG**
+    - 전체적인 코드 작성 
+    - `SeleniumURLLoader`를 이용하여 약 정보 가져오고 필요없는 정보 제거
+    - parent_splitter와 child_splitter를 이용하여 `ParentDocumentRetriever`로 정보를 더 작게 나눌 수 있게 함
+    - vectorstore에 저장하는 반복 과정을 함수로 만들어 반복 과정 줄임
+    - 8-bit 양자화 `BitsAndBytesConfig` 사용
 - **GCP 서버**
     -  OS, CPU, RAM, GPU (Nvidia T4), 하드디스크 등 GCP 서버 환경 설정
-    -  Langchain을 이용하여 RAG 구현
+    -  GPU, 하드디스크 할당량 받기
+    -  더 큰 하드디스크 교체를 위한 스냅샷 백업
     -  방화벽 특정 port를 열어 외부에서 jupyter lab 실행과 외부 프론트엔드에서 보낸 post 요청 받음
 
 ### 🍰 한승아
 - **Selenium 크롤링**
     - ㅈ~ㅎ으로 시작하는 약 정보 페이지 URL 크롤링
 - **Streamlit 프론트엔드**
-    - 전체적인 화면 구조 구현
+    - 전체적인 화면 구조 코드 작성
     - 질문 받아 채팅 형태로 화면 출력
+- **Langchain RAG**
+    - vectorstore를 디스크에 저장할 수 있도록 함
 - **GCP 서버**
     -  OS, CPU, RAM, GPU (Nvidia T4), 하드디스크 등 GCP 서버 환경 설정
-    -  Langchain을 이용하여 RAG 구현
+    -  GPU, 하드디스크 할당량 받기
+    -  더 큰 하드디스크 교체를 위한 스냅샷 백업
     -  방화벽 port를 열어 외부에서 jupyter lab 실행과 외부 프론트엔드에서 보낸 post 요청 받음
 
 
