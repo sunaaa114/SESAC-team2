@@ -4,7 +4,7 @@
 ## 팀원 구성
 | 조선아 | 한승아 |
 |:---:|:---:|
-|<a href='https://github.com/suusuu00'> <img src='https://github.com/suusuu00/SESAC-team2/assets/124228791/43413408-df69-4377-b599-a0396aad71d1' width='300'> <br> @suusuu00 </a> | <a href='https://github.com/xloor0219'> <img src='https://github.com/suusuu00/SESAC-team2/assets/124228791/a7bc9554-fa4a-4705-a3a6-d1c05d897cc4' width='300'> <br> @xloor0219 </a> |
+|<a href='https://github.com/sunnaaa114'> <img src='https://github.com/suusuu00/SESAC-team2/assets/124228791/43413408-df69-4377-b599-a0396aad71d1' width='300'> <br> @sunaaa114 </a> | <a href='https://github.com/xloor0219'> <img src='https://github.com/suusuu00/SESAC-team2/assets/124228791/a7bc9554-fa4a-4705-a3a6-d1c05d897cc4' width='300'> <br> @xloor0219 </a> |
 
 ## 목차
 1. [약 정보 챗봇](#약-정보-챗봇-pill-information-chat-bot)
